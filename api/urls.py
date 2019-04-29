@@ -25,5 +25,7 @@ urlpatterns = [
     # path('', include(router.urls)),
     path('assets', v.AssetView.as_view()),
     path('assets/', v.AssetView.as_view()),
-    path('test/', v.test)
+    path('marketdata/', v.MarketdataView.as_view()),
+    path('marketdata', v.MarketdataView.as_view()),
+    # path('test/', v.test)
 ]

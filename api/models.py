@@ -9,7 +9,7 @@ class Asset(models.Model):
         return '{name}({ticker})'.format(name=self.name, ticker=self.ticker)
 
 
-class MarketData(models.Model):
+class Marketdata(models.Model):
     asset = models.ForeignKey(Asset, on_delete=models.CASCADE)
     date = models.DateField()
     price = models.FloatField(default=0)
